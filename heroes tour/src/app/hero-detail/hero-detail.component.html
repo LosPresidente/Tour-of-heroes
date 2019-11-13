@@ -1,0 +1,57 @@
+<div *ngIf="hero">
+
+    <h2>{{hero.name | uppercase}} Details</h2>
+    <!--
+<div><span>id: </span>{{hero.id}}</div>
+    --> 
+    <div>
+      <label>name:
+        <input [(ngModel)]="hero.name" placeholder="name"/>
+      </label>
+    </div>
+  
+    <div><span>callsign: </span>{{hero.callsign}}</div>
+    <div><span>cid: </span>{{hero.cid}}</div>
+    <div><span>realname: </span>{{hero.realname}}</div>
+    <div><span>clienttype: </span>{{hero.clienttype}}</div>
+    <div><span>frequency: </span>{{hero.frequency}}</div>
+    <div><span>latitude: </span>{{hero.latitude}}</div>
+    <div><span>longitude: </span>{{hero.longitude}}</div>
+    <div><span>altitude: </span>{{hero.altitude}}</div>
+    <div><span>groundspeed: </span>{{hero.groundspeed}}</div>
+    <div><span>planned_aircraft: </span>{{hero.planned_aircraft}}</div>
+    <div><span>planned_tascruise: </span>{{hero.planned_tascruise}}</div>
+    <div><span>planned_depairport: </span>{{hero.planned_depairport}}</div>
+    <div><span>planned_altitude: </span>{{hero.planned_altitude}}</div>
+    <div><span>planned_destairport: </span>{{hero.planned_destairport}}</div>
+    <div><span>server: </span>{{hero.server}}</div>
+    <div><span>protrevision: </span>{{hero.protrevision}}</div>
+    <div><span>rating: </span>{{hero.rating}}</div>
+    <div><span>transponder: </span>{{hero.transponder}}</div>
+    <div><span>facilitytype: </span>{{hero.facilitytype}}</div>
+    <div><span>visualrange: </span>{{hero.visualrange}}</div>
+    <div><span>planned_revision: </span>{{hero.planned_revision}}</div>
+    <div><span>planned_flighttype: </span>{{hero.planned_flighttype}}</div>
+    <div><span>planned_deptime: </span>{{hero.planned_deptime}}</div>
+    <div><span>planned_actdeptime: </span>{{hero.planned_actdeptime}}</div>
+    <div><span>planned_hrsenroute: </span>{{hero.planned_hrsenroute}}</div>
+    <div><span>planned_minenroute: </span>{{hero.planned_minenroute}}</div>
+    <div><span>planned_hrsfuel: </span>{{hero.planned_hrsfuel}}</div>
+    <div><span>planned_minfuel: </span>{{hero.planned_minfuel}}</div>
+    <div><span>planned_altairport: </span>{{hero.planned_altairport}}</div>
+    <div><span>planned_remarks: </span>{{hero.planned_remarks}}</div>
+    <div><span>planned_route: </span>{{hero.planned_route}}</div>
+    <div><span>planned_depairport_lat: </span>{{hero.planned_depairport_lat}}</div>
+    <div><span>planned_depairport_lon: </span>{{hero.planned_depairport_lon}}</div>
+    <div><span>planned_destairport_lat: </span>{{hero.planned_destairport_lat}}</div>
+    <div><span>planned_destairport_lon: </span>{{hero.planned_destairport_lon}}</div>
+    <div><span>atis_message: </span>{{hero.atis_message}}</div>
+    <div><span>time_last_atis_received: </span>{{hero.time_last_atis_received}}</div>
+    <div><span>time_logon: </span>{{hero.time_logon}}</div>
+    <div><span>heading: </span>{{hero.heading}}</div>
+    <div><span>QNH_iHg: </span>{{hero.QNH_iHg}}</div>
+    <div><span>QNH_Mb: </span>{{hero.QNH_Mb}}</div>
+
+  </div>
+  <button (click)="goBack()">go back</button>
+  <button (click)="save()">save</button>
